@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Diet & Nutrisi</title>
+    <style>
+        * { font-family: 'Poppins', sans-serif; box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #56ab2f, #a8e063);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: #fff;
+            width: 420px;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        label {
+            font-size: 13px;
+            color: #444;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .link a {
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Daftar Akun</h2>
+
+    <form method="POST">
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" name="nama" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <select name="gender" required>
+                <option value="">-- Pilih --</option>
+                <option value="pria">Pria</option>
+                <option value="wanita">Wanita</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Tanggal Lahir</label>
+            <input type="date" name="tgl_lahir" required>
+        </div>
+
+        <div class="form-group">
+            <label>Tinggi Badan (cm)</label>
+            <input type="number" name="tinggi_badan" required>
+        </div>
+
+        <div class="form-group">
+            <label>Berat Badan (kg)</label>
+            <input type="number" step="0.1" name="berat_badan" required>
+        </div>
+
+        <div class="form-group">
+            <label>Tingkat Aktivitas</label>
+            <select name="aktivitas" required>
+                <option value="rendah">Rendah</option>
+                <option value="sedang">Sedang</option>
+                <option value="tinggi">Tinggi</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Tujuan</label>
+            <select name="tujuan" required>
+                <option value="diet">Diet</option>
+                <option value="jaga">Jaga Berat</option>
+                <option value="naik">Naik Berat</option>
+            </select>
+        </div>
+
+        <button type="submit">Daftar</button>
+    </form>
+</div>
+
+</body>
+</html>
